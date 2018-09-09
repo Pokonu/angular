@@ -6,6 +6,11 @@ import {User} from './user';
 export class HttpService{
 
     constructor(private http: HttpClient){ }
+
+    getData(){
+        return this.http.get('users.json');
+    }
+
     postData(user: User){
 
        const myHeaders = new HttpHeaders().set('Authorization', 'my-auth-token');

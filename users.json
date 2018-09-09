@@ -1,0 +1,19 @@
+{
+    "userList":
+    [{
+        "name": "Bob",
+        "email": "Test1",
+        "password":  "Test1",
+        "verify_password": "Test1"
+    },{
+        "name": "Tom",
+        "email":  "Test2",
+        "password":  "Test2",
+        "verify_password": "Test2"
+    },{
+        "name": "Alice",
+        "email":  "Test3",
+        "password":  "Test3",
+        "verify_password": "Test3"
+    }]
+}

@@ -20,7 +20,17 @@
 <div *ngIf="done">
     <div>Получено от сервера:</div>
     <div>Имя: {{receivedUser.name}}</div>
-    <div>Имя: {{receivedUser.email}}</div>
-    <div>Имя: {{receivedUser.password}}</div>
-    <div>Имя: {{receivedUser.password_verified}}</div>
+    <div>Email: {{receivedUser.email}}</div>
+    <div>Пароль: {{receivedUser.password}}</div>
+    <div>Пароль (повтор): {{receivedUser.verifyPassword}}</div>
 </div>
+
+<div><ul>
+      <li *ngFor="let user of users">
+      <p>Имя пользователя: {{user?.name}}</p>
+      <p>email: {{user?.email}}</p>
+      <p>password: {{user?.password}}</p>
+      <p>password: {{user?.verify_password}}</p>
+      </li>
+  </ul>
+<div>
